@@ -1,0 +1,10 @@
+#!/bin/bash
+#test.5
+echo 'enter a,b,c:'
+read letter
+case $letter in
+A|a) echo "you entered a.";;
+B|b) echo "you entered b.";;
+C|c) echo "you entered c.";;
+*) echo "not a,b,c.";;
+Esac

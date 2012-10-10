@@ -1,0 +1,8 @@
+#!/bin/bash
+#test.3
+until[ "LS_ROOT" ]
+do
+sleep 5
+LS_ROOT=`who | grep root`
+done
+echo "watch it, roots in" |mail bryant

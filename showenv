@@ -1,0 +1,12 @@
+#!/bin/bash
+#showenv
+if [ $# -ne 1 ];then
+echo "Usage:showenv<envname>"
+else
+env = ` set |grep $1 `
+if [ -z $env ];then
+echo "Don't set env $1"
+else
+echo $env
+fi
+fi
